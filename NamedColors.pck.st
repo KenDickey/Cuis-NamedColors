@@ -1,4 +1,4 @@
-'From Cuis 4.1 of 12 December 2012 [latest update: #1576] on 24 January 2013 at 4:19:01 pm'!
+'From Cuis 4.1 of 12 December 2012 [latest update: #1578] on 25 January 2013 at 3:05:46 pm'!
 'Description Choose color naming model'!
 !classDefinition: #NamedColor category: #NamedColors!
 Color subclass: #NamedColor
@@ -32,16 +32,40 @@ Named Colors
 	Look at the class side for most useful methods.
 	!
 
+!NamedColor methodsFor: 'access' stamp: 'KenD 1/25/2013 14:36'!
+closestColor
+	"Return this color's name, or nil if it has no name. Only returns a name if it exactly matches the named color."
+	
+	^ self closestColorFrom: (NamedColor dictionary)! !
+
+!NamedColor methodsFor: 'access' stamp: 'KenD 1/25/2013 14:37'!
+closestColorAssociation
+	"Return this color's name, or nil if it has no name. Only returns a name if it exactly matches the named color."
+	
+	^ self closestAssocFrom: (NamedColor dictionary)! !
+
+!NamedColor methodsFor: 'access' stamp: 'KenD 1/25/2013 14:35'!
+closestColorName
+	"Return this color's name, or nil if it has no name. Only returns a name if it exactly matches the named color."
+	
+	^ self closestNameFrom: (NamedColor dictionary)! !
+
+!NamedColor methodsFor: 'access' stamp: 'KenD 1/25/2013 15:00'!
+exactColorName
+	"Return this color's name, or nil if it has no name. Only returns a name if it exactly matches the named color."
+	
+	^NamedColor dictionary keyAtValue: self  ifAbsent: [nil]! !
+
 !NamedColor methodsFor: 'access' stamp: 'KenD 1/24/2013 15:23'!
 icon
 	"trivial method to include selector #icon for Object Explorer"
 	^super icon! !
 
-!NamedColor methodsFor: 'access' stamp: 'KenD 1/24/2013 14:27'!
+!NamedColor methodsFor: 'access' stamp: 'KenD 1/25/2013 15:00'!
 name
 	"Return this color's name, or nil if it has no name. Only returns a name if it exactly matches the named color."
 	
-	^NamedColor dictionary keyAtValue: self  ifAbsent: [nil]! !
+	^self exactColorName! !
 
 !NamedColor class methodsFor: 'accessing' stamp: 'KenD 1/24/2013 14:11'!
 colorDictSelectors
@@ -3316,8 +3340,12 @@ useTraditional
 	"Pretty useless, as Color already has this"
 	ColorNameDict := self traditionalColorNames! !
 
-!NamedColor class methodsFor: 'dictionary management' stamp: 'KenD 1/24/2013 14:21'!
+!NamedColor class methodsFor: 'dictionary management' stamp: 'KenD 1/25/2013 14:44'!
 useXKCD
+	"
+	self useXKCD.  
+	self dictionary explore.
+	"
 
 	ColorNameDict := self xkcdNamedColors! !
 
