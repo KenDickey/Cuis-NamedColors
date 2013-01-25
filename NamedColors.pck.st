@@ -1,4 +1,4 @@
-'From Cuis 4.1 of 12 December 2012 [latest update: #1576] on 24 January 2013 at 3:32:55 pm'!
+'From Cuis 4.1 of 12 December 2012 [latest update: #1576] on 24 January 2013 at 4:19:01 pm'!
 'Description Choose color naming model'!
 !classDefinition: #NamedColor category: #NamedColors!
 Color subclass: #NamedColor

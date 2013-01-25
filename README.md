@@ -14,5 +14,5 @@ To load the package
 
 Then execute
 
-	NamedColors useXKCD.
-	NamedColors dictionary explore.
+	NamedColor useXKCD.
+	NamedColor dictionary explore.
