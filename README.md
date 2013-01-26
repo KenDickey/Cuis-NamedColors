@@ -16,3 +16,4 @@ Then execute
 
 	NamedColor useXKCD.
 	NamedColor dictionary explore.
+	Color red lighter lighter asNamedColor closestColor explore.

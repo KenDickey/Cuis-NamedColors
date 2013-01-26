@@ -1,4 +1,4 @@
-'From Cuis 4.1 of 12 December 2012 [latest update: #1578] on 25 January 2013 at 3:05:46 pm'!
+'From Cuis 4.1 of 12 December 2012 [latest update: #1578] on 25 January 2013 at 6:42:07 pm'!
 'Description Choose color naming model'!
 !classDefinition: #NamedColor category: #NamedColors!
 Color subclass: #NamedColor
@@ -32,21 +32,30 @@ Named Colors
 	Look at the class side for most useful methods.
 	!
 
-!NamedColor methodsFor: 'access' stamp: 'KenD 1/25/2013 14:36'!
+!NamedColor methodsFor: 'access' stamp: 'KenD 1/25/2013 18:34'!
 closestColor
 	"Return this color's name, or nil if it has no name. Only returns a name if it exactly matches the named color."
-	
+
+"
+	Color red lighter lighter asNamedColor closestColor explore.
+"
 	^ self closestColorFrom: (NamedColor dictionary)! !
 
-!NamedColor methodsFor: 'access' stamp: 'KenD 1/25/2013 14:37'!
+!NamedColor methodsFor: 'access' stamp: 'KenD 1/25/2013 18:36'!
 closestColorAssociation
-	"Return this color's name, or nil if it has no name. Only returns a name if it exactly matches the named color."
-	
+	"Return this color's closest name->color match."
+
+"
+	Color blue lighter lighter asNamedColor closestColor explore.
+"	
 	^ self closestAssocFrom: (NamedColor dictionary)! !
 
-!NamedColor methodsFor: 'access' stamp: 'KenD 1/25/2013 14:35'!
+!NamedColor methodsFor: 'access' stamp: 'KenD 1/25/2013 18:36'!
 closestColorName
 	"Return this color's name, or nil if it has no name. Only returns a name if it exactly matches the named color."
+"
+	Color red lighter lighter asNamedColor closestColor name.
+"
 	
 	^ self closestNameFrom: (NamedColor dictionary)! !
 
