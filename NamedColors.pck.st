@@ -1,4 +1,4 @@
-'From Cuis 4.1 of 12 December 2012 [latest update: #1578] on 25 January 2013 at 6:42:07 pm'!
+'From Cuis 4.1 of 12 December 2012 [latest update: #1578] on 25 January 2013 at 7:43:32 pm'!
 'Description Choose color naming model'!
 !classDefinition: #NamedColor category: #NamedColors!
 Color subclass: #NamedColor
@@ -87,6 +87,11 @@ colorDictSelectors
 		#css3NamedColors. 
 		#css2NamedColors }! !
 
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:16'!
+colorFrom: parm
+
+	^(super colorFrom: parm) asNamedColor! !
+
 !NamedColor class methodsFor: 'accessing' stamp: 'KenD 1/24/2013 13:57'!
 colorNamed: aColorName
 
@@ -94,11 +99,11 @@ colorNamed: aColorName
 	
 	^ self dictionary at: (aColorName asSymbol) ifAbsent: [nil]! !
 
-!NamedColor class methodsFor: 'accessing' stamp: 'KenD 1/24/2013 13:54'!
+!NamedColor class methodsFor: 'accessing' stamp: 'KenD 1/25/2013 19:43'!
 colorNames
 
 	"Answer the names from my ColorName->Color Dictionary"
-	^ self dictionary collect: [ :association | association key]! !
+	^ self dictionary keys! !
 
 !NamedColor class methodsFor: 'accessing' stamp: 'KenD 1/24/2013 15:32'!
 css3NamedColors
@@ -3004,10 +3009,58 @@ dictionary
 	"Answer my ColorName->Color Dictionary"
 	^ ColorNameDict ! !
 
-!NamedColor class methodsFor: 'class initialization' stamp: 'KenD 1/24/2013 13:49'!
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:34'!
+fromArray: colorDef
+
+	^(super fromArray: colorDef) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:34'!
+fromRgbTriplet: list
+
+	^(super fromRgbTriplet: list) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:34'!
+fromString: aString
+
+	^(super fromString: aString) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:35'!
+gray: brightness
+
+	^(super gray: brightness) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:35'!
+h: hue s: saturation v: brightness
+
+	^(super h: hue s: saturation v: brightness) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:35'!
+h: hue s: saturation v: brightness alpha: alpha
+
+	^(super h: hue s: saturation v: brightness alpha: alpha) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:36'!
+hue: hue chroma: chroma brightness: brightness
+
+	^(super hue: hue chroma: chroma brightness: brightness) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:36'!
+hue: hue chroma: chroma luminance: luma
+
+	^(super hue: hue chroma: chroma luminance: luma) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:36'!
+hue: hue saturation: saturation brightness: brightness
+
+	^(super hue: hue saturation: saturation brightness: brightness) asNamedColor! !
+
+!NamedColor class methodsFor: 'class initialization' stamp: 'KenD 1/25/2013 19:27'!
 initialize
 
 	"Start with a small but useful dictionary of color names"
+"
+	self initialize.
+"
 	
 	ColorNameDict := self xkcdFirst48 
 ! !
@@ -3318,6 +3371,36 @@ nbsisccNamedColors3
     at: #darkGray  put: (NamedColor fromString: '#555555');
     at: #black  put: (NamedColor fromString: '#222222');
 		yourself! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:18'!
+new
+
+	^(super new) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:32'!
+r: r g: g b: b
+
+	^(super r: r g: g b: b) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:32'!
+r: r g: g b: b alpha: alpha
+
+	^(super r: r g: g b: b alpha: alpha) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:33'!
+r: r g: g b: b range: range
+
+	^(super r: r g: g b: b range: range) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:33'!
+random
+
+	^(super random) asNamedColor! !
+
+!NamedColor class methodsFor: 'instance creation' stamp: 'KenD 1/25/2013 19:33'!
+random2
+
+	^(super random2) asNamedColor! !
 
 !NamedColor class methodsFor: 'accessing' stamp: 'KenD 1/24/2013 14:12'!
 traditionalColorNames
