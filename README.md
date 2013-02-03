@@ -13,7 +13,7 @@ Each package loads one color dictionary.
 To use these packages, the core Color class needs to be updated.  
 Until this happens, file in changes through 1583 (Current).
 Then filein 1584-CuisCore-KenDickey-2013Feb02-18h12m-KenD.1.cs.st
-The invoke
+Then invoke
 
 	Color intialize.
 
@@ -30,9 +30,16 @@ To load the XKCD color dictionary package:
 Then execute
 
 	Color xkcdColorDictionary explore.
+	Color darkColorDict explore.
+	Color pinkColorDict explore.
+	Color <selection>ColorDict explore.  "you get the idea"
 
-To reset the Color name->color dictionary:
+To set the Color name->color dictionary:
 
  	Color setColorNamesDict: (Color xkcdColorDictionary).
 
 Likewise for other dictionaries.  Look in Color>><NAME>ColorDictionary
+
+Using Color>>setColorNamedDict: you can make and use your own dictionaries of color names.
+
+Note: http://en.wikipedia.org/wiki/List_of_colors
