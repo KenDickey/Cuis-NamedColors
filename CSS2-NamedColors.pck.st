@@ -1,9 +1,9 @@
-'From Cuis 4.1 of 12 December 2012 [latest update: #1578] on 28 January 2013 at 8:01:05 pm'!
+'From Cuis 4.1 of 12 December 2012 [latest update: #1600] on 14 February 2013 at 1:57 pm'!
 'Description CSS2 color names come from an internet web standard by W3C:
       CSSColor Module Level 2
-These have been subsumed by the larger CSS3 colr name set.
+These have been subsumed by the larger CSS3 color name set.
 
-	 http://blog.xkcd.com/2010/05/03/color-survey-results/
+	 http://www.w3.org/TR/css3-color/
 
 See Class side:
 	Color css2ColorDictionary explore.
@@ -11,7 +11,7 @@ See Class side:
 To reset the Color name->color dictionary:
  	Color setColorNamesDict: (Color css2ColorDictionary).'!
 
-!Color class methodsFor: '*css2' stamp: 'KenD 1/28/2013 19:34'!
+!Color class methodsFor: '*css2-namedcolors' stamp: 'KenD 1/28/2013 19:34'!
 css2ColorDictionary
 	"Answer a dictionary of CSS2 compliant color names to Color objects."
 "
@@ -21,7 +21,7 @@ css2ColorDictionary
 	^(self css2NamedColors1 addAll: self css2NamedColors2; yourself)
 	! !
 
-!Color class methodsFor: '*css2' stamp: 'KenD 1/28/2013 19:32'!
+!Color class methodsFor: '*css2-namedcolors' stamp: 'KenD 1/28/2013 19:32'!
 css2NamedColors1
 	"Answer a dictionary of CSS2 compliant color names to Color objects.
 	First half!!"
@@ -100,7 +100,7 @@ css2NamedColors1
 		at: 'lightgoldenrodyellow' put: (Color r: 250 g: 250 b: 210 range: 255);
 		yourself! !
 
-!Color class methodsFor: '*css2' stamp: 'KenD 1/28/2013 19:32'!
+!Color class methodsFor: '*css2-namedcolors' stamp: 'KenD 1/28/2013 19:32'!
 css2NamedColors2
 	"Answer a dictionary of CSS2 compliant color names to Color objects.
 	Second half!!"
@@ -183,3 +183,13 @@ css2NamedColors2
 		at: 'yellow' put: (Color r: 255 g: 255 b: 0 range: 255);
 		at: 'yellowgreen' put: (Color r: 154 g: 205 b: 50 range: 255);
 		yourself! !
+
+!Color class methodsFor: '*css2-namedcolors' stamp: 'jmv 2/14/2013 09:22'!
+fromCSS2String: aString
+	"Answer a color from the given W3C spec.
+	Color fromCSS2String: 'aliceblue'
+	"
+
+	((aString beginsWith: '#') or: [ aString beginsWith: 'rgb' ])
+		ifTrue: [ ^self fromString: aString ].
+	^self css2ColorDictionary at: aString ifAbsent: nil! !

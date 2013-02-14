@@ -10,7 +10,7 @@ To reset the Color name->color dictionary:
  	Color setColorNamesDict: (Color xkcdColorDictionary).
 '!
 
-!Color class methodsFor: '*xkcd' stamp: 'KenD 1/28/2013 19:59'!
+!Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:59'!
 xkcdColorDictionary
 	"Answer a dictionary of XKCD color name survey to Color objects.
 	 http://blog.xkcd.com/2010/05/03/color-survey-results/"
@@ -31,7 +31,7 @@ To reset the Color name->color dictionary:
 	^xkcdDict
 ! !
 
-!Color class methodsFor: '*xkcd' stamp: 'KenD 1/28/2013 19:31'!
+!Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:31'!
 xkcdColors1
 	"Answer a dictionary of XKCD color names survey name to Color objects."
 
@@ -152,7 +152,7 @@ xkcdColors1
   at: #washedOutGreen put: (Color fromString: '#bcf5a6') ;
 yourself! !
 
-!Color class methodsFor: '*xkcd' stamp: 'KenD 1/28/2013 19:31'!
+!Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:31'!
 xkcdColors2
 	"Answer a dictionary of XKCD color names survey name to Color objects."
 
@@ -282,7 +282,7 @@ xkcdColors2
   at: #petrol put: (Color fromString: '#005f6a') ;
 yourself! !
 
-!Color class methodsFor: '*xkcd' stamp: 'KenD 1/28/2013 19:31'!
+!Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:31'!
 xkcdColors3
 	"Answer a dictionary of XKCD color names survey name to Color objects."
 
@@ -390,7 +390,7 @@ xkcdColors3
   at: #merlot put: (Color fromString: '#730039') ;
 yourself! !
 
-!Color class methodsFor: '*xkcd' stamp: 'KenD 1/28/2013 19:31'!
+!Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:31'!
 xkcdColors4
 	"Answer a dictionary of XKCD color names survey name to Color objects."
 
@@ -503,7 +503,7 @@ xkcdColors4
   at: #blood put: (Color fromString: '#770001') ;
 yourself! !
 
-!Color class methodsFor: '*xkcd' stamp: 'KenD 1/28/2013 19:31'!
+!Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:31'!
 xkcdColors5
 	"Answer a dictionary of XKCD color names survey name to Color objects."
 
@@ -611,7 +611,7 @@ xkcdColors5
   at: #blueyPurple put: (Color fromString: '#6241c7') ;
 yourself! !
 
-!Color class methodsFor: '*xkcd' stamp: 'KenD 1/28/2013 19:31'!
+!Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:31'!
 xkcdColors6
 	"Answer a dictionary of XKCD color names survey name to Color objects."
 
@@ -723,7 +723,7 @@ xkcdColors6
   at: #greenGrey put: (Color fromString: '#77926f') ;
 yourself! !
 
-!Color class methodsFor: '*xkcd' stamp: 'KenD 1/28/2013 19:31'!
+!Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:31'!
 xkcdColors7
 	"Answer a dictionary of XKCD color names survey name to Color objects."
 
@@ -835,7 +835,7 @@ xkcdColors7
   at: #aquaGreen put: (Color fromString: '#12e193') ;
 yourself! !
 
-!Color class methodsFor: '*xkcd' stamp: 'KenD 1/28/2013 19:31'!
+!Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:31'!
 xkcdColors8
 	"Answer a dictionary of XKCD color names survey name to Color objects."
 
@@ -953,7 +953,7 @@ xkcdColors8
   at: #springGreen put: (Color fromString: '#a9f971') ;
 yourself! !
 
-!Color class methodsFor: '*xkcd' stamp: 'KenD 1/28/2013 19:31'!
+!Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:31'!
 xkcdColors9
 	"Answer a dictionary of XKCD color names survey name to Color objects."
 

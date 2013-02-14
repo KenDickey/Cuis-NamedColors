@@ -8,7 +8,7 @@ See Class side:
 To reset the Color name->color dictionary:
  	Color setColorNamesDict: (Color nbsisccColorDictionary).'!
 
-!Color class methodsFor: '*nbsiscc' stamp: 'KenD 1/28/2013 19:59'!
+!Color class methodsFor: '*nbsiscc-namedcolors' stamp: 'KenD 1/28/2013 19:59'!
 nbsisccColorDictionary
 	"Answer a dictionary of NBS-ISCC compliant color names to Color objects.
 	http://tx4.us/nbs-iscc.htm"
@@ -26,7 +26,7 @@ To reset the Color name->color dictionary:
 		
 	^nbsisccDict! !
 
-!Color class methodsFor: '*nbsiscc' stamp: 'KenD 1/28/2013 19:38'!
+!Color class methodsFor: '*nbsiscc-namedcolors' stamp: 'KenD 1/28/2013 19:38'!
 nbsisccColors1
 	"Answer a dictionary of NBS-ISCC compliant color names to Color objects.
 	First half!!"
@@ -148,7 +148,7 @@ nbsisccColors1
     at: #oliveBlack  put: (Color fromString: '#25241D');
 		yourself! !
 
-!Color class methodsFor: '*nbsiscc' stamp: 'KenD 1/28/2013 19:38'!
+!Color class methodsFor: '*nbsiscc-namedcolors' stamp: 'KenD 1/28/2013 19:38'!
 nbsisccColors2
 	"Answer a dictionary of NBS-ISCC compliant color names to Color objects.
 	First half!!"
@@ -261,7 +261,7 @@ nbsisccColors2
  
 		yourself! !
 
-!Color class methodsFor: '*nbsiscc' stamp: 'KenD 1/28/2013 19:38'!
+!Color class methodsFor: '*nbsiscc-namedcolors' stamp: 'KenD 1/28/2013 19:38'!
 nbsisccColors3
 	"Answer a dictionary of NBS-ISCC compliant color names to Color objects.
 	First half!!"
