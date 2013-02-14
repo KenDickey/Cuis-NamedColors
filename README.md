@@ -5,10 +5,10 @@ Packages extend Color class to support choice of color naming "standards".
 
 Each package loads one color dictionary.
 
- XKCD-ColorNames.pck.st		-- Major survey of agreed upon names for colors 
- NBSISCC-ColorNames.pck.st	-- National Bureau of Standards rationalized names
- CSS2-ColorNames.pck.st		-- W3C Standard
- CSS3-ColorNames.pck.st		-- W3C Standard
+	XKCD-ColorNames.pck.st		-- Major survey of agreed upon names for colors 
+	NBSISCC-ColorNames.pck.st	-- National Bureau of Standards rationalized names
+	CSS2-ColorNames.pck.st		-- W3C Standard
+	CSS3-ColorNames.pck.st		-- W3C Standard
 	
 To use these packages you need Cuise updates through 1600 (or higher).
 
