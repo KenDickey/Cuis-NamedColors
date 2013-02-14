@@ -5,17 +5,14 @@ Packages extend Color class to support choice of color naming "standards".
 
 Each package loads one color dictionary.
 
-	XKCD.pck.st		-- major survey of agreed upon names for colors 
-	NBSISCC.pck.st	-- Rationalized color names (easy to remember/use)
-	CSS2.pck.st		-- W3C Standard
-	CSS3.pck.st		-- W3C Standard
+ XKCD-ColorNames.pck.st		-- Major survey of agreed upon names for colors 
+ NBSISCC-ColorNames.pck.st	-- National Bureau of Standards rationalized names
+ CSS2-ColorNames.pck.st		-- W3C Standard
+ CSS3-ColorNames.pck.st		-- W3C Standard
 	
-To use these packages, the core Color class needs to be updated.  
-Until this happens, file in changes through 1583 (Current).
-Then filein 1584-CuisCore-KenDickey-2013Feb02-18h12m-KenD.1.cs.st
-Then invoke
+To use these packages you need Cuise updates through 1600 (or higher).
 
-	Color intialize.
+	SystemVersion current highestUpdate. "1600"
 
 
 To load the XKCD color dictionary package:
@@ -24,7 +21,7 @@ To load the XKCD color dictionary package:
     slash := FileDirectory slash.
      CodePackageFile installPackageStream:
         (FileStream concreteStream readOnlyFileNamed: 
-            '..', slash, 'Cuis-NamedColors', slash, 'XKCD.pck.st'
+            '..', slash, 'Cuis-NamedColors', slash, 'XKCD-NamedColors.pck.st'
         )
         
 Then execute
@@ -32,7 +29,7 @@ Then execute
 	Color xkcdColorDictionary explore.
 	Color darkColorDict explore.
 	Color pinkColorDict explore.
-	Color <selection>ColorDict explore.  "you get the idea"
+	Color @@@@ColorDict explore.  "you get the idea"
 
 To set the Color name->color dictionary:
 
