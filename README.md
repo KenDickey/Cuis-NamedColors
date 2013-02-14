@@ -37,6 +37,6 @@ To set the Color name->color dictionary:
 
 Likewise for other dictionaries.  Look in Color>><NAME>ColorDictionary
 
-Using Color>>setColorNamedDict: you can make and use your own dictionaries of color names.
+Using Color>>setColorNamesDict: you can make and use your own dictionaries of color names.
 
 Note: http://en.wikipedia.org/wiki/List_of_colors
