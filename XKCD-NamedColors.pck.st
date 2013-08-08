@@ -9,7 +9,9 @@ See Class side:
 To reset the Color name->color dictionary:
  	Color setColorNamesDict: (Color xkcdColorDictionary).
 '!
-
+!provides: 'XKCD-NamedColors' 1 0!
+!requires: 'Graphics-Files-Additional' 1 nil!
+!requires: 'Cuis-Base' 42 1788!
 !Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:59'!
 xkcdColorDictionary
 	"Answer a dictionary of XKCD color name survey to Color objects.

@@ -10,7 +10,9 @@ See Class side:
 To reset the Color name->color dictionary:
  	Color setColorNamesDict: (Color css3ColorDictionary).
 '!
-
+!provides: 'CSS3-NamedColors' 1 0!
+!requires: 'Graphics-Files-Additional' 1 nil!
+!requires: 'Cuis-Base' 42 1788!
 !Color class methodsFor: '*css3-namedcolors' stamp: 'KenD 2/14/2013 14:24'!
 css3ColorDictionary
 	"Answer a dictionary of CSS3 compliant color names to Color objects.

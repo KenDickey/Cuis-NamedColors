@@ -7,7 +7,9 @@ See Class side:
 
 To reset the Color name->color dictionary:
  	Color setColorNamesDict: (Color nbsisccColorDictionary).'!
-
+!provides: 'NBSISCC-NamedColors' 1 0!
+!requires: 'Graphics-Files-Additional' 1 nil!
+!requires: 'Cuis-Base' 42 1788!
 !Color class methodsFor: '*nbsiscc-namedcolors' stamp: 'KenD 1/28/2013 19:59'!
 nbsisccColorDictionary
 	"Answer a dictionary of NBS-ISCC compliant color names to Color objects.
