@@ -1,5 +1,6 @@
 Cuis-NamedColors
 ================
+Tested in Cuis 4.2 rev 2226
 
 Packages extend Color class to support choice of color naming "standards".
 
