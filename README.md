@@ -31,8 +31,20 @@ To set the Color name->color dictionary to the dictionary of your choice:
 ````Smalltalk
  	Color setColorNamesDict: (Color xkcdColorDictionary).
 ````
-
 Likewise for other dictionaries.  Look in Color>><NAME>ColorDictionary
+
+If you load Morphic-Misc1, there is an ImagePallet.
+````Smalltalk
+ 	Feature require: #'Morphic-Misc1'.
+	self useCSS3ColorDict.  
+	self useCrayonColorDict.
+	self useXKCDColorDict.  
+	ImagePallet namedColors.
+````
+You can then select a morph to get its halo handles, open a menu, select Show DropTarget for Me.
+Then click on a color from the color pallet and drop it on the drop target to change its color.
+Where there is more than one color selectior, you can choose (e.g. #color:).
+
 
 Using Color>>setColorNamesDict: you can make and use your own dictionaries of color names.
 
