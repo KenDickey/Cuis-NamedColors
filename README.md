@@ -36,9 +36,9 @@ Likewise for other dictionaries.  Look in Color>><NAME>ColorDictionary
 If you load Morphic-Misc1, there is an ImagePallet.
 ````Smalltalk
  	Feature require: #'Morphic-Misc1'.
-	self useCSS3ColorDict.  
-	self useCrayonColorDict.
-	self useXKCDColorDict.  
+	ImagePallet useCSS3ColorDict.  
+	ImagePallet useCrayonColorDict.
+	ImagePallet useXKCDColorDict.  
 	ImagePallet namedColors.
 ````
 You can then select a morph to get its halo handles, open a menu, select Show DropTarget for Me.
