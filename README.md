@@ -42,7 +42,7 @@ If you load Morphic-Misc1, there is an ImagePallet.
 	ImagePallet namedColors.
 ````
 You can then select a morph to get its halo handles, open a menu, select Show DropTarget for Me.
-Then click on a color from the color pallet and drop it on the drop target to change its color.
+Then click on a color from the color pallet and drop it on the drop target to change its target morph's color.
 Where there is more than one color selectior, you can choose (e.g. #color:).
 
 
