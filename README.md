@@ -17,6 +17,7 @@ To use these packages use Cuise version 4.2 or higher.
 	Feature require: 'NBSISCC-NamedColors'.
 	Feature require: 'CSS2-NamedColors'.
 	Feature require: 'CSS3-NamedColors'.
+	Feature require: 'Crayon-NamedColors'.
 ````
 
 Then execute something like:
