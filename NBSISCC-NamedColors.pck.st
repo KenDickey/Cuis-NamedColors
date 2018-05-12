@@ -1,4 +1,4 @@
-'From Cuis 4.1 of 12 December 2012 [latest update: #1578] on 28 January 2013 at 8:00:57 pm'!
+'From Cuis 5.0 of 7 November 2016 [latest update: #3319] on 12 May 2018 at 5:44:44 pm'!
 'Description NBS-ISCC color names originating from Munsell''s idea of a rational naming scheme based around "color centroids":
 	http://tx4.us/nbs-iscc.htm 
 
@@ -7,9 +7,13 @@ See Class side:
 
 To reset the Color name->color dictionary:
  	Color setColorNamesDict: (Color nbsisccColorDictionary).'!
-!provides: 'NBSISCC-NamedColors' 1 0!
-!requires: 'Graphics-Files-Additional' 1 nil!
-!requires: 'Cuis-Base' 42 1788!
+!provides: 'NBSISCC-NamedColors' 1 1!
+!requires: 'Graphics-Files-Additional' 1 nil nil!
+!requires: 'Color-Aux' 1 3 nil!
+!requires: 'Cuis-Base' 42 1788 nil!
+
+
+
 !Color class methodsFor: '*nbsiscc-namedcolors' stamp: 'KenD 1/28/2013 19:59'!
 nbsisccColorDictionary
 	"Answer a dictionary of NBS-ISCC compliant color names to Color objects.

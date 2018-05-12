@@ -1,4 +1,4 @@
-'From Cuis 4.1 of 12 December 2012 [latest update: #1578] on 28 January 2013 at 8:00:55 pm'!
+'From Cuis 5.0 of 7 November 2016 [latest update: #3319] on 12 May 2018 at 5:45:12 pm'!
 'Description XKCD color names come from user surveys which attempt to determine which names people agree on to  use for colors.
 
 	 http://blog.xkcd.com/2010/05/03/color-survey-results/
@@ -9,9 +9,13 @@ See Class side:
 To reset the Color name->color dictionary:
  	Color setColorNamesDict: (Color xkcdColorDictionary).
 '!
-!provides: 'XKCD-NamedColors' 1 0!
-!requires: 'Graphics-Files-Additional' 1 nil!
-!requires: 'Cuis-Base' 42 1788!
+!provides: 'XKCD-NamedColors' 1 1!
+!requires: 'Graphics-Files-Additional' 1 nil nil!
+!requires: 'Cuis-Base' 42 1788 nil!
+!requires: 'Color-Aux' 1 3 nil!
+
+
+
 !Color class methodsFor: '*xkcd-namedcolors' stamp: 'KenD 1/28/2013 19:59'!
 xkcdColorDictionary
 	"Answer a dictionary of XKCD color name survey to Color objects.

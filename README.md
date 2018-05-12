@@ -1,8 +1,9 @@
 Cuis-NamedColors
 ================
-Tested in Cuis 4.2 rev 2972
+Tested in Cuis 4.2 rev 3319
 
 Packages extend Color class to support choice of color naming "standards".
+
 
 Each package loads one color dictionary.
 
@@ -13,6 +14,7 @@ Each package loads one color dictionary.
 	
 To use these packages use Cuise version 4.2 or higher.
 ````Smalltalk
+	Feature require: 'Color-Aux'  "in Morphic-Misc1"
 	Feature require: 'XKCD-NamedColors'.
 	Feature require: 'NBSISCC-NamedColors'.
 	Feature require: 'CSS2-NamedColors'.

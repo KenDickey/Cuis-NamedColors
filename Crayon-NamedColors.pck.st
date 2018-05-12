@@ -1,7 +1,10 @@
-'From Cuis 4.2 of 25 July 2013 [latest update: #2330] on 28 May 2015 at 4:51:11.580377 pm'!
+'From Cuis 5.0 of 7 November 2016 [latest update: #3319] on 12 May 2018 at 5:44:25 pm'!
 'Description Crayon Colors from
 	http://www.colourlovers.com/web/blog/2008/04/22/all-120-crayon-names-color-codes-and-fun-facts'!
-!provides: 'Crayon-NamedColors' 1 0!
+!provides: 'Crayon-NamedColors' 1 1!
+!requires: 'Color-Aux' 1 3 nil!
+
+
 
 !Color class methodsFor: '*crayon-namedcolors' stamp: 'KenD 5/28/2015 15:36'!
 crayonColorDictionary

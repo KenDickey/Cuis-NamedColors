@@ -1,4 +1,4 @@
-'From Cuis 4.1 of 12 December 2012 [latest update: #1600] on 14 February 2013 at 1:57 pm'!
+'From Cuis 5.0 of 7 November 2016 [latest update: #3319] on 12 May 2018 at 5:43:49 pm'!
 'Description CSS2 color names come from an internet web standard by W3C:
       CSSColor Module Level 2
 These have been subsumed by the larger CSS3 color name set.
@@ -10,9 +10,13 @@ See Class side:
 
 To reset the Color name->color dictionary:
  	Color setColorNamesDict: (Color css2ColorDictionary).'!
-!provides: 'CSS2-NamedColors' 1 0!
-!requires: 'Graphics-Files-Additional' 1 nil!
-!requires: 'Cuis-Base' 42 1788!
+!provides: 'CSS2-NamedColors' 1 1!
+!requires: 'Cuis-Base' 42 1788 nil!
+!requires: 'Color-Aux' 1 3 nil!
+!requires: 'Graphics-Files-Additional' 1 nil nil!
+
+
+
 !Color class methodsFor: '*css2-namedcolors' stamp: 'KenD 1/28/2013 19:34'!
 css2ColorDictionary
 	"Answer a dictionary of CSS2 compliant color names to Color objects."

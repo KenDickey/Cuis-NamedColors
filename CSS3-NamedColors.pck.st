@@ -1,4 +1,4 @@
-'From Cuis 4.1 of 12 December 2012 [latest update: #1600] on 14 February 2013 at 2:24:49 pm'!
+'From Cuis 5.0 of 7 November 2016 [latest update: #3319] on 12 May 2018 at 5:44:06 pm'!
 'Description CSS3 color names come from an internet web standard by W3C:
       CSSColor Module Level 3
 
@@ -10,9 +10,13 @@ See Class side:
 To reset the Color name->color dictionary:
  	Color setColorNamesDict: (Color css3ColorDictionary).
 '!
-!provides: 'CSS3-NamedColors' 1 0!
-!requires: 'Graphics-Files-Additional' 1 nil!
-!requires: 'Cuis-Base' 42 1788!
+!provides: 'CSS3-NamedColors' 1 1!
+!requires: 'Color-Aux' 1 3 nil!
+!requires: 'Graphics-Files-Additional' 1 nil nil!
+!requires: 'Cuis-Base' 42 1788 nil!
+
+
+
 !Color class methodsFor: '*css3-namedcolors' stamp: 'KenD 2/14/2013 14:24'!
 css3ColorDictionary
 	"Answer a dictionary of CSS3 compliant color names to Color objects.
