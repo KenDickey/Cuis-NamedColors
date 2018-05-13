@@ -2,7 +2,7 @@
 'Description Crayon Colors from
 	http://www.colourlovers.com/web/blog/2008/04/22/all-120-crayon-names-color-codes-and-fun-facts'!
 !provides: 'Crayon-NamedColors' 1 1!
-!requires: 'Color-Aux' 1 3 nil!
+!requires: 'Color-Extras' 1 4 nil!
 
 
 

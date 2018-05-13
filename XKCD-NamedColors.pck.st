@@ -12,7 +12,7 @@ To reset the Color name->color dictionary:
 !provides: 'XKCD-NamedColors' 1 1!
 !requires: 'Graphics-Files-Additional' 1 nil nil!
 !requires: 'Cuis-Base' 42 1788 nil!
-!requires: 'Color-Aux' 1 3 nil!
+!requires: 'Color-Extras' 1 4 nil!
 
 
 

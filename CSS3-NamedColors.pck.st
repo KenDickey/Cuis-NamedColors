@@ -11,7 +11,7 @@ To reset the Color name->color dictionary:
  	Color setColorNamesDict: (Color css3ColorDictionary).
 '!
 !provides: 'CSS3-NamedColors' 1 1!
-!requires: 'Color-Aux' 1 3 nil!
+!requires: 'Color-Extras' 1 4 nil!
 !requires: 'Graphics-Files-Additional' 1 nil nil!
 !requires: 'Cuis-Base' 42 1788 nil!
 

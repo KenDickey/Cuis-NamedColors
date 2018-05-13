@@ -14,7 +14,7 @@ Each package loads one color dictionary.
 	
 To use these packages use Cuise version 4.2 or higher.
 ````Smalltalk
-	Feature require: 'Color-Aux'  "in Morphic-Misc1"
+	Feature require: 'Color-Extras'. "in Cuis-Smalltalk-Dev/Packages"
 	Feature require: 'XKCD-NamedColors'.
 	Feature require: 'NBSISCC-NamedColors'.
 	Feature require: 'CSS2-NamedColors'.
